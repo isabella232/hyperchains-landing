@@ -339,19 +339,45 @@ input, select, textarea {
 /* Custom Styling Start */
    
    
-   #mobileNav {display:none; width:3.3em; height:3.3em; border:1px solid transparent; border-radius:1.8em; position:fixed; top:0.3em; left:0.3em; background:#3124507d; text-align:center; z-index:100000; }
+   #mobileNav {
+	   display:none;
+	   width:3.3em;
+	   height:3.3em;
+	   border:1px solid transparent;
+	   border-radius:1.8em;
+	   position:fixed;
+	   top:0.3em;
+	   left:0.3em;
+	   background:#3124507d;
+	   text-align:center;
+	   z-index:100000;
+	   }
    
-   a.openbtn, a.closebtn {display:none; opacity:0; transition: opacity 0.5s ease-in-out;}
+   a.openbtn, a.closebtn {
+	   display:none;
+	   opacity:0;
+	   transition: opacity 0.5s ease-in-out;
+	   }
    
-   #intro h2 + p {
+   #intro .separator + p {
 		font-weight:500;
 		font-size:1.15em;
 		padding-right:2em;
 		}
+		
+   #intro .separator {
+	   border-bottom:1px solid rgba(255,255,255,.6);
+	   display:block;
+	   width:calc(100% - 2.5em);
+	   height:1px;
+	   margin-bottom:0.9em;
+	   }
+		
     .actionBtns {
 		width:60%;
 		display:inline-block;
 		}
+		
     .quote {
 	width:38%;
 	display:inline-block;
@@ -390,6 +416,17 @@ input, select, textarea {
 		font-size: .7em;
 		text-align:right;
 	}
+	
+	.features section:hover {
+		background-color: rgba(255,255,255,.07);
+		color: rgba(255, 255, 255, 0.77);
+		 -webkit-transition: background-color .3s ease-in-out, color .2s;
+         -moz-transition: background-color .3s ease-in-out, color .2s;
+         -o-transition: background-color .3s ease-in-out, color .2s;
+         -ms-transition: background-color .3s ease-in-out, color .2s;
+		transition: background-color .3s ease-in-out, color .2s;
+	
+	}
 		
 		#two ul.actions li {margin: 0 auto;}
 		
@@ -414,10 +451,15 @@ input, select, textarea {
 		
 		@media screen and (max-width: 980px) {
              #intro p.yani br {display:block;}
-			 h1, #intro h2, #intro h2 + p {
+			 h1, #intro h2, #intro .separator + p {
 				 text-align:center;
 				 padding-right:0;
 				 }
+				 
+			 #intro .separator  {
+                 width:100%;
+				 }
+				 
 		     .actionBtns, .quote  {
 				 width:auto;
 				 display: block;
@@ -3992,10 +4034,13 @@ input, select, textarea {
 				transition: margin-left .5s ease-in-out;
 			}
 			
-			#mobileNav, #mobileNav.open + #sidebar {display:block;}
-			#mobileNav.open + #sidebar {margin-left:0;}
-
-			
+			#mobileNav, #mobileNav.open + #sidebar {
+				display:block;
+				}
+			#mobileNav.open + #sidebar {
+				margin-left:0;
+				}
+				
 			a.openbtn {
 				position:fixed;
 				top:.3em;
