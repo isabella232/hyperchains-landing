@@ -4029,7 +4029,7 @@ input, select, textarea {
 					
 		    #mobileNav.open {background-color:transparent; transition:background-color 0.2s ease-in-out;}
 			
-			#sidebar nav a {font-size:.9em;}
+			#sidebar nav a {font-size:.75em;}
 		}
 
 /* Intro */
