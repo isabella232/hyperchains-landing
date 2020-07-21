@@ -339,7 +339,7 @@ input, select, textarea {
 /* Custom Styling Start */
    
    
-   #mobileNav {display:none; width:100%; position:fixed; top:0; left:0; background:#3124507d; z-index:100000; height:4em;}
+   #mobileNav {display:none; width:3.3em; height:3.3em; border:1px solid transparent; border-radius:1.8em; position:fixed; top:0.3em; left:0.3em; background:#3124507d; text-align:center; z-index:100000; }
    
    a.openbtn, a.closebtn {display:none; opacity:0; transition: opacity 0.5s ease-in-out;}
    
