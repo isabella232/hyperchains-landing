@@ -366,10 +366,12 @@ input, select, textarea {
 		}
 		
    #intro .separator {
-	   border-bottom:1px solid rgba(255,255,255,.6);
+	   border-top:1px solid rgba(255,255,255,.5);
 	   display:block;
-	   width:calc(100% - 2.5em);
-	   height:1px;
+	   background:rgba(255,255,255,.2);
+	   width:calc(100% - 2.4em);
+	   max-width: 650px;
+	   height:2px;
 	   margin-bottom:0.9em;
 	   }
 		
@@ -457,7 +459,10 @@ input, select, textarea {
 				 }
 				 
 			 #intro .separator  {
-                 width:100%;
+                 width:calc(100% - 1em);
+				 position:relative;
+				 margin:0 auto;
+				 margin-bottom: .9em;
 				 }
 				 
 		     .actionBtns, .quote  {
